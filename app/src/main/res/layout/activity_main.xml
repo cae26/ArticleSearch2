@@ -6,7 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/articles"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -15,4 +21,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
